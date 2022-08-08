@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+<script src="../d3.js" charset="utf-8"></script>
+<div class="container" style="margin-top: 50px;">
+
+    <div style="padding: 30px; margin:30px;">
+        <input type="text" id="srcText" name="src" style="width:500px;margin:10px;padding:5px;" placeholder="source">
+        <br/>
+        <button type="button" class="btn btn-primary" id="translate" value="translate" style="margin:10px;padding:5px;"> translate
+        </button>
+        <br/>
+
+        <input type="text" id="resText" name="res" style="width:500px;margin:10px;padding:5px;" placeholder="result">
+
+    </div>
+
+    <hr/>
+    <div id="main" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 30px;">
+
+              <span style="user-select:none; padding: 10px;margin:10px">
+                Layer: <select aria-expanded="false" aria-haspopup="true" class="btn btn-info dropdown-toggle"
+                               data-toggle="dropdown" id="layer" type="button"></select>
+            </span>
+        <br/>
+        <br/>
+        <div class="row">
+            <div class="col-md-1">
+                Heads:
+                <span id="heads">
+                </span>
+            </div>
+            <div class="col-md-11">
+                <span id='vis'>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.words{
+    margin: 10px;
+    padding:10px;
+}
+.words:hover {
+    margin: 10px;
+    background-color: #9FE2BF;
+    padding:10px;
+
+}
+
+.selectedWord {
+    /*margin: 10px;*/
+    background-color: #9FE2BF;
+    /*padding:10px;*/
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: auto;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #9FE2BF;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity:0.5;
+}
+
+#corr{
+    padding:50px;
+}
+#eng{
+    top:300px;
+    left:50px;
+    margin:100px;
+}
